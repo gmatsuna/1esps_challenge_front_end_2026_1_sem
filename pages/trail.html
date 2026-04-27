@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Escolha as trilhas de saúde do CareQuest para começar sua jornada.">
+    <meta name="theme-color" content="#1C9770">
+    <title>CareQuest – Escolha suas trilhas</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link href="https://cdn.lineicons.com/5.1/line/lineicons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/trail.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+    <div class="app-shell">
+        <main id="main-content" class="trail">
+
+            <header class="trail__intro">
+                <h1>Escolha suas trilhas</h1>
+                <p>Selecione até 2 caminhos que você quer percorrer agora.</p>
+            </header>
+
+            <form action="./summary.html" method="get" novalidate>
+                <fieldset class="trail__list">
+                    <legend class="visually-hidden">Trilhas de saúde disponíveis</legend>
+
+                    <label class="trail__option" for="trail-sleep">
+                        <span class="trail__option-content">
+                            <span class="trail__icon trail__icon--moon" aria-hidden="true">
+                                <i class="fa-regular fa-moon"></i>
+                            </span>
+                            <span>
+                                <h2>Sono em Dia</h2>
+                                <p>Melhore sua qualidade de sono</p>
+                            </span>
+                        </span>
+                        <input type="checkbox" id="trail-sleep" name="trails" value="sleep">
+                    </label>
+
+                    <label class="trail__option" for="trail-move">
+                        <span class="trail__option-content">
+                            <span class="trail__icon trail__icon--body" aria-hidden="true">
+                                <i class="lni lni-beat"></i>
+                            </span>
+                            <span>
+                                <h2>Movimento na Rotina</h2>
+                                <p>Atividades físicas leves e constantes</p>
+                            </span>
+                        </span>
+                        <input type="checkbox" id="trail-move" name="trails" value="move">
+                    </label>
+
+                    <label class="trail__option" for="trail-mind">
+                        <span class="trail__option-content">
+                            <span class="trail__icon trail__icon--brain" aria-hidden="true">
+                                <i class="fa-solid fa-brain"></i>
+                            </span>
+                            <span>
+                                <h2>Mente Tranquila</h2>
+                                <p>Redução de estresse e ansiedade</p>
+                            </span>
+                        </span>
+                        <input type="checkbox" id="trail-mind" name="trails" value="mind">
+                    </label>
+
+                    <label class="trail__option" for="trail-food">
+                        <span class="trail__option-content">
+                            <span class="trail__icon trail__icon--food" aria-hidden="true">
+                                <i class="fa-solid fa-utensils"></i>
+                            </span>
+                            <span>
+                                <h2>Alimentação Melhor</h2>
+                                <p>Escolhas nutricionais conscientes</p>
+                            </span>
+                        </span>
+                        <input type="checkbox" id="trail-food" name="trails" value="food">
+                    </label>
+                </fieldset>
+
+                <p class="trail__counter" aria-live="polite">0 de 2 trilhas selecionadas</p>
+
+                <nav class="trail__cta" aria-label="Ação principal">
+                    <a class="btn-primary-cta" href="./summary.html">Criar minha jornada</a>
+                </nav>
+            </form>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
+</html>
