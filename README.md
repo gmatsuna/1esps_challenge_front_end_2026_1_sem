@@ -252,12 +252,6 @@ Sem JavaScript próprio do projeto: o modal de resgate em `catalog.html` usa o s
 
 ---
 
-## 📚 Próximos passos (Sprint 3)
-
-A próxima entrega migra este protótipo para **React + Vite** com **TailwindCSS**, consumo de API simulada (JSON local), localStorage e deploy na Vercel — conforme as disciplinas de Web Development e Front-End Design da Sprint 3.
-
----
-
 ## 📄 Licença
 
 Projeto acadêmico desenvolvido para fins educacionais — FIAP / Care Plus, 2026.
